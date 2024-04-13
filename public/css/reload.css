@@ -1,0 +1,64 @@
+#load-containner{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.541);  
+    backdrop-filter: blur(5px);
+    transition: 1s;
+    z-index: 1000;
+}
+:root {
+	--hue: 223;
+	--bg: hsl(var(--hue),90%,95%);
+	--fg: hsl(var(--hue),90%,5%);
+	--primary: hsl(var(--hue),90%,50%);
+	--trans-dur: 0.3s;
+	
+}
+.pl {
+	display: block;
+	overflow: visible;
+	width: 8em;
+	height: 8em;
+    font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+}
+.pl__ring {
+	stroke: hsla(var(--hue),90%,5%,0.1);
+	transition: stroke var(--trans-dur);
+    font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+}
+.pl__worm {
+	stroke: var(--primary);
+	transform-origin: 64px 64px;
+	visibility: hidden;
+    font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+}
+.pl__worm--moving {
+	animation: worm 8s linear;
+	visibility: visible;
+    font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),90%,5%);
+		--fg: hsl(var(--hue),90%,95%);
+	}
+	.pl__ring {
+		stroke: hsla(var(--hue),90%,95%,0.1);
+        font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+	}
+}
+@keyframes worm {
+	from {
+		stroke-dasharray: 22 307.86 22;
+		transform: rotate(0);
+	}
+	to {
+		stroke-dasharray: 2 347.86 2;
+		transform: rotate(4turn);
+	}
+}
+

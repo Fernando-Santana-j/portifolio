@@ -1,0 +1,107 @@
+main{
+    display: flex;
+    background-color: var(--main-background);
+    transition: 0.4s;
+
+}
+#main-containner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em;
+    height: 100vh;
+    width: 100%;
+}
+#main-title{
+    color: var(--color-secundary);
+    font-family: 'Imprima', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+#resumo{
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: 200;
+    font-family: 'Imprima', sans-serif;
+    color: var(--text-gray-color-primary);
+}
+#left-curriculo{
+    width: 35%;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column ;
+    align-items: center;
+}
+#texts{
+    display: flex;
+    flex-direction: column;
+}
+#preview-render{
+    width: 35%;
+    height: 85%;
+    min-height: 452px;
+    min-width: 350px;
+    border: 2px solid var(--border-color);
+    padding: 5px;
+    border-radius: 8px;
+}
+#preview-render img{
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    border-radius: 4px;
+}
+.button-curriculo{
+    background-color: transparent;
+    border: none;
+    max-width: 70%;
+    outline: none;
+    border: 1px solid var(--color-secundary);
+    background-color: transparent;
+    padding: 0.6em;
+    font-size: 1.5em;
+    color: var(--color-secundary);
+    margin-top: 1vh;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: "inter", sans-serif;
+    border-radius: 6px;
+}
+.button-curriculo:hover{
+    text-shadow: 0px 0px 13px var(--color-secundary);
+    box-shadow: inset 0 0 10px 0 var(--color-secundary), 0 0 10px 0 var(--color-secundary);
+    transition: 0.5s;
+}
+#svgCurriculo{
+    margin-left: 0.8em;
+    position: relative;
+    top: 3px;
+}
+#svgCurriculo path{
+    fill: var(--color-secundary);
+    
+}
+
+@media screen and (max-width: 1200px) {
+    #main-containner{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    #left-curriculo{
+        width: 100%;
+        height: 100%;
+    }
+    #preview-render{
+        margin-top: 5em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body,html{
+        height: 100%;
+        overflow: hidden;
+    }
+
+} 

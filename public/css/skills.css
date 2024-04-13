@@ -1,0 +1,306 @@
+#containner{
+    height: 100%;
+}
+main{
+    display: flex;
+    background-color: var(--main-background);
+}
+#main-containner{
+    width: 60%;
+}
+#content{
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+#main-title{
+    color: var(--color-secundary);
+    margin-left: 2em;
+    font-family: 'Imprima', sans-serif;
+    font-size: 3.2em;
+}
+#body-content, #h1-content{
+    margin: 1em 0 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#statistics{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+}
+#graph span{
+    font-family: 'Imprima', sans-serif;
+    font-size: 1em;
+    color: var(--color-text-primary);
+    font-weight: 700;
+}
+#progress-bar{
+    margin-top: 8px;
+    width: 30em;
+    height: 0.4em;
+    border-radius: 20px;
+    background-color: var(--secundary-color-header);
+}
+#progress-bar div{
+    height: 0.4em;
+    animation: animationsBar 1s;
+}
+.graph-col{
+    margin-top: 20px;
+}
+#works{
+    margin-top: 5em;
+    width: 100%;
+}
+#works-col{
+    background-color: var(--secundary-color-header);
+    width: 23em;
+    height: 13em;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    border-radius: 8px;
+    padding: 15px;
+    justify-content: center;
+}
+#work-title{
+    font-size: 1.9em;
+    font-family: 'Imprima', sans-serif;
+    color: var(--color-text-primary);
+}
+#work-company{
+    margin-top: 1em;
+    font-family: 'Imprima', sans-serif;
+    font-size: 1.2em;
+    color: var(--color-text-primary);
+}
+#work-date{
+    margin-top: 0.4em;
+    font-family: 'Imprima', sans-serif;
+    font-size: 0.8em;
+    color: var(--color-text-primary);
+}
+#work-resume{
+    margin-top: 1em;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-gray-color-primary);
+}
+#htmlTag-bottom{
+    user-select: none;
+    margin-top: 1.5em;
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    font-weight: 200;
+}
+#htmlTag-bottom::before{
+    content: '</BODY>';
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    position: absolute;
+    margin-top: -2em;
+    margin-left: 1em;
+    font-weight: 200;
+}
+#htmlTag{
+    user-select: none;
+    color: var(--text-gray-color-secundary);
+    font-size: 1em;
+    font-family: 'Covered By Your Grace', cursive;
+    font-weight: 200;
+    margin-bottom: 1em;
+}
+#htmlTag::after{
+    content: '<BODY>';
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    position: absolute;
+    margin-top: 1.5em;
+    margin-left: -1em;
+    font-weight: 200;
+}
+#paragrafo-content{
+    margin-left: 7em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 65%;
+}
+#text-paragrafo{
+    font-size: 1.2em;
+    color: var(--text-gray-color-primary);
+    font-family: 'Imprima', sans-serif;
+}
+#text-paragrafo::before{
+    content: '<P>';
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    position: absolute;
+    margin-left: -1.8em;
+    font-weight: 200;
+}
+#text-paragrafo::after{
+    content: '</P>';
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    position: absolute;
+    margin-left: 0.5em;
+    font-weight: 200;
+}
+#main-title::before{
+    content: '<H1>';
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    position: absolute;
+    margin-top: -1.2rem;
+    margin-left: -1em;
+    font-weight: 200;
+}
+#main-title::after{
+    content: '</H1>';
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    position: absolute;
+    margin-top: 1.5em;
+    margin-left: 0.5em;
+    font-weight: 200;
+}
+
+
+@keyframes animationsBar{
+    0%{
+        width: 0;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    #body-content, #h1-content{
+        margin: 4vh 0 4vh 0;
+    }
+    #htmlTag::after{
+        margin-top: 3em;
+    }
+    #htmlTag-bottom::before{
+        margin-top: -3em;
+    }
+    #paragrafo-content{
+        margin-bottom: 4em;
+    }
+    #htmlTag{
+        margin: 2em 0 4em 0;
+    }
+    #button{
+        bottom: 4vh;
+    }
+    #main-title{
+        font-size: 3em;
+    }
+    #contact-button{
+        font-size: 1.4em;
+    }
+    #main-containner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #body-content, #h1-content{
+        margin: 2vh 0 2vh 0;
+    }
+    #htmlTag::after{
+        margin-top: 2em;
+    }
+    #htmlTag-bottom::before{
+        margin-top: -2em;
+    }
+    #paragrafo-content{
+        margin-bottom: 3em;
+    }
+    #htmlTag{
+        margin: 1em 0 3em 0;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    body,html{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    #main-title{
+        font-size: 3em;
+    }
+    #text-paragrafo{
+        font-size: 1em;
+    }
+    #progress-bar{
+        width: 20em;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    body{
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main{
+        flex-direction: column;
+    }
+    #works{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #statistics{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #htmlTag::after{
+        margin-left: -2em;
+    }
+    #main-title{
+        margin-left: 1em;
+        width: 80%;
+    }
+    #paragrafo-content{
+        margin-left: 4em;
+        width: 80%;
+    }
+    #text-paragrafo{
+        width: 80%;
+    }
+    #body-content{
+        width: 100%;
+    }
+    #main-containner{
+        width: 100%;
+    }
+    #progress-bar{
+        width: 16em;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('./reusable/head.ejs')  %> 
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Portfólio / Fernando</title>
+</head>
+<body>
+    <%- include('./reusable/reload.ejs') %> 
+    <div id="containner">
+        <%- include('./reusable/langContainner.ejs') %> 
+        <%- include('./reusable/header.ejs',{index:0})  %> 
+        <%#- include('./reusable/scrollPage.ejs',{index:0})  %> 
+        <main>
+            <div id="main-containner">
+                <div id="content">
+                    <span id="htmlTag">&lt;HTML&gt;</span><br>
+                    <div id="body-content">
+                        <div id="h1-content">
+                            <h1 id="main-title">
+                                
+                            </h1><br>
+                        </div>
+                        <p id="paragrafo-content">
+                            <span id="text-paragrafo"></span>
+                        </p>
+                    </div>
+                    <span id="htmlTag-bottom">&lt;/HTML&gt;</span><br>
+                </div>
+               <div id="button">
+                    <a href="/contact">
+                        <span id="contact-button"></span>
+                    </a>
+                </div>
+            </div>
+            <div id="right-content">
+                <div id="right-containner">
+                    <div id="img-containner">
+                        <img src="../public/img/foto.jpeg" draggable="false"> 
+                    </div>
+                    <div id="secundary-color-picker">
+                        <span id="picker-text"></span>
+                        <div id="options-color">
+                            <div data-color="select" class="colors" id="color-sec"></div>
+                            <div data-color="roxo" class="colors"></div>
+                            <div data-color="vermelho" class="colors" style="background-color: #f70000;"></div>
+                            <div data-color="rosa" class="colors" style="background-color: #f700ce;"></div>
+                            <div data-color="verde" class="colors" style="background-color: #15f700;"></div>
+                            <div id="select-newColor" >
+                                <input type="color" id="color-input" />
+                                <div id="newColor"><div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <%- include('./reusable/scripts.ejs') %> 
+</body>
+</html>

@@ -1,0 +1,21 @@
+Substituir as imagens do work por um iframe com o site porem tudo tem que ser bem configuradinho por causa da responsividade 
+EX de codigo:
+
+    #meu-iframe-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #meu-iframe {
+        width: 1920px; /* Largura desejada */
+        height: 1080px; /* Altura desejada */
+        transform: scale(0.5); /* Reduz o conteúdo para metade do tamanho original */
+        transform-origin: 0 0; /* Define o ponto de origem da transformação */
+        border: none; /* Remove a borda do iframe, se desejar */
+    }
+
+    

@@ -1,0 +1,29 @@
+main{
+    display: flex;
+    background-color: var(--main-background);
+}
+#main-containner{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#h1-content{
+    margin-top: 10vh;
+}
+#main-title{
+    color: var(--color-secundary);
+    font-family: 'Imprima', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+#text-paragrafo{
+    font-size: 1.4em;
+    color: var(--text-gray-color-primary);
+    font-family: 'Imprima', sans-serif;
+}
+#paragrafo-content{
+    margin-top: 15vh;
+    width: 80%;
+    text-align: center;
+}

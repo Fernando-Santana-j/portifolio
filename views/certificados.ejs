@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('./reusable/head.ejs')  %> 
+    <link rel="stylesheet" href="../public/css/certificados.css">
+    <title>Fernando / Certificates</title>
+</head>
+<body>
+    <%- include('./reusable/reload.ejs') %> 
+    <div id="containner">
+        <%- include('./reusable/langContainner.ejs') %> 
+        <%- include('./reusable/header.ejs',{index:6})  %> 
+        <main>
+            <div id="main-containner">
+                <div id="top-text">
+                    <h1 id="main-title">Meus Certificados📜</h1>
+                    <span id="resumo">Abaixo é possível ver todos os meus certificados de cursos que pude concluir, caso tenha vontade e possível baixá-los no formato PDF ao clicar no botão!</span>
+                </div>
+                <div id="certificado-containner">
+                    <div id="certificados-content">
+                        <h1 class="title-row" id="certificado-presencial">Certificados de Cursos Presenciais</h1>
+                        <div class="cert-row">
+                            <a href="../public/assets/pdfs/Certificado_PreparaCursos.pdf" download="Certificado_PreparaCursos">
+                                <div class="cert-col">
+                                    <object class="pdf-model" data="../public/assets/pdfs/Certificado_PreparaCursos.pdf" type="application/pdf"><span style="color: red; font: bold 1em 'imprima',sans-serif;">Seu navegador não tem suporte para exibir o modelo</span><a href="../public/assets/pdfs/Certificado_PreparaCursos.pdf" download="Certificado_PreparaCursos" style="padding: 8px; margin-top: 2em; border: 1px solid var(--color-secundary); font: 1.2em 'inter',sans-serif;   color: var(--color-secundary);">Baixar o Certificado</a></object>
+                                    <div class="texts-containner">
+                                        <span class="pdf-title" id="prepara-title">Certificado Prepara Cursos</span>
+                                        <span class="pdf-curso">Web Developer</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h1 class="title-row" id="certificado-online">Certificados de Cursos Online</h1>
+                        <div class="cert-row">
+                            <a href="../public/assets/pdfs/Certificado-danki-games.pdf" download="Certificado-danki-games">
+                                <div class="cert-col">
+                                    <object class="pdf-model" data="../public/assets/pdfs/Certificado-danki-games.pdf" type="application/pdf"><span style="color: red; font: bold 1em 'imprima',sans-serif;">Seu navegador não tem suporte para exibir o modelo</span><a href="../public/assets/pdfs/Certificado-danki-games.pdf" download="Certificado-danki-games" style="padding: 8px; margin-top: 2em; border: 1px solid var(--color-secundary); font: 1.2em 'inter',sans-serif;   color: var(--color-secundary);">Baixar o Certificado</a></object>
+                                    <div class="texts-containner">
+                                        <span class="pdf-title">Certificado DankiCode</span>
+                                        <span class="pdf-curso">Game Developer</span>
+                                    </div>
+                                </div> 
+                            </a>
+                            <a href="../public/assets/pdfs/Certificado-danki-unity.pdf" download="Certificado-danki-unity">
+                                <div class="cert-col">
+                                    <object class="pdf-model" data="../public/assets/pdfs/Certificado-danki-unity.pdf" type="application/pdf"><span style="color: red; font: bold 1em 'imprima',sans-serif;">Seu navegador não tem suporte para exibir o modelo</span><a href="../public/assets/pdfs/Certificado-danki-unity.pdf" download="Certificado-danki-unity" style="padding: 8px; margin-top: 2em; border: 1px solid var(--color-secundary); font: 1.2em 'inter',sans-serif;   color: var(--color-secundary);">Baixar o Certificado</a></object>
+                                    <div class="texts-containner">
+                                        <span class="pdf-title">Certificado DankiCode</span>
+                                        <span class="pdf-curso">Unity Developer</span>
+                                    </div>
+                                </div> 
+                            </a>
+                            <a href="../public/assets/pdfs/Certificado_udemy_javascript.pdf" download="Certificado_udemy_javascript">
+                                <div class="cert-col">
+                                    <object class="pdf-model" data="../public/assets/pdfs/Certificado_udemy_javascript.pdf" type="application/pdf"><span style="color: red; font: bold 1em 'imprima',sans-serif;">Seu navegador não tem suporte para exibir o modelo</span><a href="../public/assets/pdfs/Certificado_udemy_javascript.pdf" download="Certificado_udemy_javascript" style="padding: 8px; margin-top: 2em; border: 1px solid var(--color-secundary); font: 1.2em 'inter',sans-serif;   color: var(--color-secundary);">Baixar o Certificado</a></object>
+                                    <div class="texts-containner">
+                                        <span class="pdf-title">Certificado Udemy</span>
+                                        <span class="pdf-curso">JavaScript</span>
+                                    </div>
+                                </div> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="curriculo">    
+                    <a href="/curriculo" ><svg id="svgCurriculo" width="22"viewBox="0 0 511.99896 511" xmlns="http://www.w3.org/2000/svg"><path d="m140.671875 371.816406c-5.980469-5.980468-15.683594-5.980468-21.667969 0l-114.515625 114.519532c-5.984375 5.980468-5.984375 15.683593 0 21.667968 2.992188 2.992188 6.914063 4.488282 10.835938 4.488282 3.917969 0 7.839843-1.496094 10.832031-4.488282l114.515625-114.515625c5.988281-5.984375 5.988281-15.6875 0-21.671875zm0 0"/><path d="m507.511719 4.988281c-2.941407-2.941406-6.929688-4.53125-11.109375-4.488281l-191.074219 3.441406c-6.148437.113282-11.632813 3.886719-13.933594 9.585938-2.300781 5.699218-.972656 12.226562 3.375 16.570312l41.25 41.25-220.6875 220.6875c-2.871093 2.875-4.488281 6.773438-4.488281 10.835938s1.613281 7.960937 4.488281 10.835937l83.457031 83.449219c2.992188 2.992188 6.914063 4.488281 10.832032 4.488281 3.921875 0 7.84375-1.496093 10.835937-4.488281l220.683594-220.683594 41.253906 41.25c4.34375 4.347656 10.871094 5.675782 16.570313 3.375 5.699218-2.300781 9.472656-7.785156 9.582031-13.933594l3.449219-191.066406c.074218-4.15625-1.542969-8.167968-4.484375-11.109375zm-28.953125 165.558594-26.582032-26.578125c-2.871093-2.875-6.769531-4.488281-10.832031-4.488281-4.066406 0-7.964843 1.613281-10.835937 4.488281l-220.6875 220.683594-61.785156-61.78125 220.6875-220.6875c2.875-2.875 4.488281-6.769532 4.488281-10.835938 0-4.0625-1.613281-7.960937-4.488281-10.832031l-26.578126-26.582031 139.125-2.503906zm0 0"/><path d="m20.898438 423.464844c3.921874 0 7.84375-1.5 10.832031-4.492188l67.214843-67.210937c5.984376-5.984375 5.984376-15.6875 0-21.671875-5.984374-5.980469-15.683593-5.980469-21.667968 0l-67.214844 67.214844c-5.984375 5.984374-5.984375 15.6875 0 21.671874 2.992188 2.988282 6.914062 4.488282 10.835938 4.488282zm0 0"/><path d="m160.734375 413.546875-67.21875 67.210937c-5.984375 5.984376-5.984375 15.6875 0 21.671876 2.992187 2.992187 6.914063 4.488281 10.835937 4.488281 3.921876 0 7.84375-1.496094 10.835938-4.488281l67.214844-67.214844c5.984375-5.984375 5.984375-15.6875 0-21.667969-5.984375-5.984375-15.6875-5.984375-21.667969 0zm0 0"/></svg> <span id="voltar-curriculo">Voltar para o curriculo</span></a>
+                </div> 
+            </div>
+        </main>
+    </div>
+    <%- include('./reusable/scripts.ejs') %> 
+</body>
+</html>

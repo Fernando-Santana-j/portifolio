@@ -1,0 +1,375 @@
+#containner{
+    height: 100%;
+}
+body{
+    overflow-x: hidden; 
+}
+main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-background);
+    transition: 0.4s;
+}
+#content{
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    min-width: 50vw;
+    flex-direction: column;
+}
+#htmlTag-bottom{
+    user-select: none;
+    margin-top: 1.5em;
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    font-weight: 200;
+}
+#htmlTag-bottom::before{
+    content: '</BODY>';
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    position: absolute;
+    margin-top: -2em;
+    margin-left: 1em;
+    font-weight: 200;
+}
+#htmlTag{
+    user-select: none;
+    color: var(--text-gray-color-secundary);
+    font-size: 1em;
+    font-family: 'Covered By Your Grace', cursive;
+    font-weight: 200;
+    margin-bottom: 1em;
+}
+#htmlTag::after{
+    content: '<BODY>';
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    position: absolute;
+    margin-top: 1.5em;
+    margin-left: -1em;
+    font-weight: 200;
+}
+#text-paragrafo{
+    font-size: 1em;
+    color: var(--text-gray-color-primary);
+    font-family: 'Imprima', sans-serif;
+}
+#text-paragrafo::before{
+    content: '<P>';
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    position: absolute;
+    margin-left: -1.8em;
+    font-weight: 200;
+}
+#text-paragrafo::after{
+    content: '</P>';
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    position: absolute;
+    margin-left: 0.5em;
+    font-weight: 200;
+}
+#paragrafo-content{
+    margin-left: 7em;
+    margin-top: 1em;
+}
+#main-title{
+    color: var(--color-text-primary);
+    margin-left: 2em;
+    font-family: 'Imprima', sans-serif;
+    font-size: 3em;
+}
+#main-title::before{
+    content: '<H1>';
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    position: absolute;
+    margin-top: -1.2rem;
+    margin-left: -1em;
+    font-weight: 200;
+}
+#main-title::after{
+    content: '</H1>';
+    font-family: 'Covered By Your Grace', cursive;
+    color: var(--text-gray-color-secundary);
+    font-size: 1rem;
+    position: absolute;
+    margin-top: 1.5em;
+    margin-left: 0.5em;
+    font-weight: 200;
+}
+
+#button{
+    transition: 0.5s;
+    border: 2px solid var(--color-secundary);
+    min-width: 160px;
+    width: 13vw;
+    min-height: 20px;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 2em;
+    margin-top: 2vh;
+    position: relative;
+    bottom: 2vh;
+    
+}
+#button a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#contact-button{
+    color: var(--color-secundary);
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    transition: 0.5s;
+}
+#button:hover #contact-button{
+    text-shadow: 0px 0px 13px var(--color-secundary);
+    transition: 0.5s;
+}
+#button:hover{
+    box-shadow: inset 0 0 10px 0 var(--color-secundary), 0 0 10px 0 var(--color-secundary);
+    transition: 0.5s;
+}
+#body-content{
+    margin: 2vh 0 2vh 0;
+}
+#body-content, #h1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#right-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+#right-containner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img-containner img{
+    width: 14vw;
+    height: 42vh;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 62px 4px var(--color-secundary);
+    -moz-box-shadow: 0px 0px 62px 4px var(--color-secundary);
+    box-shadow: 0px 0px 62px 4px var(--color-secundary);
+    transition: 0.5s;
+    animation: sombraAnim 1s;
+}
+#secundary-color-picker{
+    padding: 5px;
+    width: 21em;
+    height: 6em;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    border: 1px solid var( --text-gray-color-secundary);
+    border-radius: 15px;
+    background-color: var(--secundary-black);
+    text-align: center;
+}
+#picker-text{
+    color: var(--color-text-primary);
+    font-size: 1.2em;
+    font-family: 'Imprima', sans-serif;
+}
+#options-color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+#newColor{
+    user-select: none;
+    cursor: pointer;
+    min-width: 2.4em;
+    min-height: 2.4em;
+    max-width: 2.5em;
+    max-height: 2.5em;
+    border-radius: 20em;
+    background-color: #666666;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#newColor div{
+    width: 60%;
+    height: 60%;
+    content: url(../assets/svgs/plus_fx7mv1cmdi3i.svg);
+}
+#color-input {
+    position: absolute;                      
+    opacity: 0;
+    cursor: pointer;
+}
+.colors{
+    user-select: none;
+    cursor: pointer;
+    min-width: 2.4em;
+    min-height: 2.4em;
+    max-width: 2.5em;
+    max-height: 2.5em;
+    border-radius: 20em;
+    background-color: #9055FF;
+    color: #9055FF;
+    margin-left: 8px;
+    margin-right: 8px;
+    animation: colorAnim 0.8s;
+}
+.color-selected{
+    content: url(../assets/svgs/done_white_24dp.svg);
+}
+#index-ola{
+    font-size: 1.5em;
+    color: var(--color-secundary);
+}
+#select-newColor{
+    animation: colorAnim 0.8s;
+}
+
+@keyframes sombraAnim{
+    0%{
+        -webkit-box-shadow: 0px 0px 0px 0px var(--color-secundary);
+        -moz-box-shadow: 0px 0px 0px 0px var(--color-secundary);
+        box-shadow: 0px 0px 0px 0px var(--color-secundary);
+    }
+}
+@keyframes colorAnim{
+    0%{
+        transform: scale(0);
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    
+    #body-content, #h1-content{
+        margin: 4vh 0 4vh 0;
+    }
+    #htmlTag::after{
+        margin-top: 3em;
+    }
+    #htmlTag-bottom::before{
+        margin-top: -3em;
+    }
+    #paragrafo-content{
+        margin-bottom: 4em;
+    }
+    #htmlTag,#htmlTag-bottom{
+        margin: 2em 0 4em 0;
+    }
+    #button{
+        bottom: 4vh;
+    }
+    #main-title{
+        font-size: 3em;
+    }
+    #contact-button{
+        font-size: 1.4em;
+    }
+    #main-containner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #body-content, #h1-content{
+        margin: 3vh 0 3vh 0;
+    }
+    body,html{
+        height: 100%;
+    }
+    #htmlTag::after{
+        margin-top: 3em;
+    }
+    #htmlTag-bottom::before{
+        margin-top: -3em;
+    }
+    #paragrafo-content{
+        margin-bottom: 4em;
+    }
+    #htmlTag{
+        margin: 1em 0 3em 0;
+    }
+    #button{
+        bottom: 4vh;
+    }
+    #main-title{
+        font-size: 2.5em;
+    }
+} 
+@media screen and (max-width: 1200px) {
+    #right-content{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #body-content, #h1-content{
+        margin: 2vh 0 2vh 0;
+    }
+    #htmlTag::after{
+        margin-top: 2em;
+    }
+    #htmlTag-bottom::before{
+        margin-top: -2em;
+    }
+    #paragrafo-content{
+        margin-bottom: 3em;
+    }
+    #htmlTag{
+        margin: 1em 0 3em 0;
+    }
+    #button{
+        bottom: 3vh;
+    }
+    main{
+        flex-direction: column;
+    }
+    #right-content{
+        margin-top: 5em;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    #img-containner img{
+        width: 14em;
+        height: 20em;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    #htmlTag::after{
+        margin-left: -2em;
+    }
+    #main-title{
+        margin-left: 1em;
+    }
+    #paragrafo-content{
+        margin-left: 4em;
+    }
+}

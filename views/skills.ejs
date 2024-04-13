@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('./reusable/head.ejs')  %> 
+    <link rel="stylesheet" href="../public/css/skills.css">
+    <title>Fernando / Skills</title>
+</head>
+<body>
+    <%- include('./reusable/reload.ejs') %> 
+    <div id="containner">
+        <%- include('./reusable/langContainner.ejs') %> 
+        <%- include('./reusable/header.ejs',{index:2})  %> 
+        <%#- include('./reusable/scrollPage.ejs',{index:2})  %> 
+        <main>
+            <div id="main-containner">
+                <div id="content">
+                    <span id="htmlTag">&lt;HTML&gt;</span><br>
+                    <div id="body-content">
+                        <div id="h1-content">
+                            <h1 id="main-title"></h1><br>
+                        </div>
+                        <p id="paragrafo-content">
+                            <span id="text-paragrafo"></span>
+                        </p>
+                    </div>
+                    <span id="htmlTag-bottom">&lt;/HTML&gt;</span><br>
+                </div>
+            </div>
+            <div id="statistics">
+                <div id="graph">
+                    <div class="graph-col">
+                        <span>Front-End</span>
+                        <footer id="progress-bar">
+                            <div style="transition: 0.5s ease-out; border-radius: 20px; width: 60%; background-color: #FF0099;"></div>
+                        </footer>
+                    </div>
+                    <div class="graph-col">
+                        <span>Back-End</span>
+                        <footer id="progress-bar">
+                            <div style="transition: 0.5s ease-out; border-radius: 20px; width: 85%; background-color: #A600C1;"></div>
+                        </footer>
+                    </div>
+                    <div class="graph-col">
+                        <span title="hard skill">NodeJs</span>
+                        <footer id="progress-bar">
+                            <div style="transition: 0.5s ease-out; border-radius: 20px; width: 75%; background-color: #0037FC;"></div>
+                        </footer>
+                    </div>
+                </div>
+                <div id="works">
+                    <div id="works-col">
+                        <span id="work-title"></span>
+                        <span id="work-company">InfoEduc Company</span>
+                        <span id="work-date">01/2022-04/2022</span>
+                        <p id="work-resume">
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <%- include('./reusable/scripts.ejs') %> 
+</body>
+</html>

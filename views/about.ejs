@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('./reusable/head.ejs')  %> 
+    <link rel="stylesheet" href="../public/css/about.css">
+    <title>Fernando / About</title>
+</head>
+<body>
+    <%- include('./reusable/reload.ejs') %> 
+    <div id="containner">
+        <%- include('./reusable/langContainner.ejs') %> 
+        <%- include('./reusable/header.ejs',{index:1})  %> 
+        <%#- include('./reusable/scrollPage.ejs',{index:1})  %> 
+        <main>
+            <div id="main-containner">
+                <div id="h1-content">
+                    <h1 id="main-title"></h1>
+                </div>
+                <p id="paragrafo-content">
+                    <span id="text-paragrafo"></span>
+                </p>
+            </div>
+        </main>
+    </div>
+    <%- include('./reusable/scripts.ejs') %> 
+</body>
+</html>

@@ -1,0 +1,140 @@
+body{
+    overflow-x: hidden;
+}
+main{
+    display: flex;
+    background-color: var(--main-background);
+    transition: 0.4s;
+}
+#main-containner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    height: 100%;
+    width: 100%;
+}
+#top-text{
+    width: 60%;
+    text-align: center;
+    margin-top: 2em;
+    height: fit-content;
+}
+#top-text h1{
+    font-family: 'Imprima', sans-serif;
+    font-size: 3em;
+    color: var(--color-secundary);
+    font-weight: bold;
+    margin-bottom: 0.8em;
+}
+#top-text span{
+    font-family: 'Imprima', sans-serif;
+    font-size: 1.2em;
+    color: var(--text-gray-color-primary);
+}
+#certificado-containner{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 2em;
+}
+#certificados-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.title-row{
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-primary);
+    text-align: center;
+    margin-top: 2em;
+}
+.cert-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+.cert-col{
+    width: 16em;
+    height: 22em;
+    margin-top: 2em;
+    border: 1px solid var(--border-color);
+    display: flex;
+    margin: 1em 1em 0 1em;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+.pdf-model{
+    height: 80%;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+.pdf-title{
+    font: bold 1.2em 'Imprima', sans-serif;
+    color: var(--color-text-primary);
+    text-align: center;
+}
+.pdf-curso{
+    font: 0.8em 'inter', sans-serif;
+    color: var(--text-gray-color-primary);
+    text-align: center;
+    margin-top: 0.6em;
+}
+.pdf-model{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.texts-containner{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#curriculo{
+    padding-top: 5em;
+    padding-bottom: 3em;
+}
+#curriculo a{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid var(--color-secundary);
+    background-color: transparent;
+    padding: 0.6em;
+    font-size: 1.5em;
+    color: var(--color-secundary);
+    margin-top: 1vh;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Inter', sans-serif;
+    border-radius: 6px;
+}
+#svgCurriculo{
+    transform: rotateY(180deg);
+    position: relative;
+    top: 3px;
+    margin-right: 0.8em;
+}
+#svgCurriculo path{
+    fill: var(--color-secundary);
+}
+
+@media screen and (min-width: 1000px) {
+    body,html{
+        height: 100%;
+    }
+
+} 

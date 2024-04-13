@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('./reusable/head.ejs')  %> 
+    <link rel="stylesheet" href="../public/css/contact.css">
+    <title>Fernando / Contact</title>
+</head>
+<body>
+    <%- include('./reusable/reload.ejs') %> 
+    <div id="containner">
+        <%- include('./reusable/langContainner.ejs') %> 
+        <%- include('./reusable/header.ejs',{index:5}) %> 
+        <%#- include('./reusable/scrollPage.ejs',{index:5}) %> 
+        <main>
+            <div id="main-containner">
+                <div id="content">
+                    <div id="h1-content">
+                        <h1 id="main-title"></h1>
+                    </div>
+                    <p id="paragrafo-content">
+                        <span id="text-paragrafo"></span>
+                    </p>
+                    <div id="form-content">
+                        <div id="form-conteinner">
+                            <div id="form_inputs">
+                                <input id="nome" name="nome" type="text" placeholder="Name" required>
+                                <input id="email" name="email" type="email" placeholder="Email" required>
+                            </div>
+                            <div id="form-textarea">
+                                <textarea name="message" id="message" placeholder="Message" required></textarea>
+                            </div>
+                            <input type="submit" value="Enviar" id="enviar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <%- include('./reusable/scripts.ejs') %> 
+    
+    <script src="../public/js/contact.js"></script>
+</body>
+</html>
