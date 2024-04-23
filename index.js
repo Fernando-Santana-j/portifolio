@@ -127,7 +127,6 @@ app.get('/curriculo/certificados',(req,res)=>{
 
 
 
-
 //----------------SERVER-------------------
 
 const port = process.env.PORT_APP || 3131
