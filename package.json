@@ -27,6 +27,7 @@
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "file-system": "^1.2.2",
-    "nodemailer": "^6.8.0"
+    "nodemailer": "^6.8.0",
+    "ytdl-core": "^4.11.5"
   }
 }

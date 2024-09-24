@@ -6,7 +6,7 @@ const session = require('express-session')
 const path = require('path');
 const nodemailer = require('nodemailer')
 const ejs = require('ejs')
-
+const ytdl = require(`ytdl-core`)
 
 //------------Configs--------------
 const app = express();
@@ -125,6 +125,14 @@ app.get('/curriculo/certificados',(req,res)=>{
     res.render('certificados')
 })
 
+
+app.post(`/downloadExtension/getLink`,async(req,res)=>{
+    if (req.body.ytlink) {
+        const info = await ytdl.getInfo(req.body.ytlink)
+        const link = ytdl.chooseFormat(info.formats, { filter: 'audioonly' }).url
+        res.status(200).send({link:link})
+    }
+})
 
 
 //----------------SERVER-------------------
