@@ -137,7 +137,7 @@ app.post(`/downloadExtension/getLink`,async(req,res)=>{
 
 //----------------SERVER-------------------
 
-const port = process.env.PORT_APP || 3131
+const port = process.env.PORT_APP || 80
 app.listen(port,()=>{
     console.log(`Servidor rodando na porta ${port}` );
 });
