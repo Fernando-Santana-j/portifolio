@@ -1051,12 +1051,19 @@ section {
     transform: translateX(10px);
     box-shadow: var(--shadow-md);
 }
-
-.contact-icon {
-    font-size: 32px;
-    flex-shrink: 0;
+.contact-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
-
+.contact-icon svg{
+    width: 2.5em;
+    height: 2.5em;
+}
+.whats-icon *{
+    fill: var(--text-primary);
+}
 .contact-item h4 {
     font-size: 16px;
     margin-bottom: 5px;
