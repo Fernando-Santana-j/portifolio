@@ -15,11 +15,10 @@ const app = express();
 require('dotenv').config()
 
 app.use(session({
-    secret: process.env.SECRET, 
+    secret: process.env.SECRET || 'dmafdnawoifnaoif1oirnrobnroiri5asfa', 
     resave: false, 
-    saveUninitialized: true,
+    saveUninitialized: false,
 }))
-
 
 const SMTP_CONFIG = require('./configs/smtp');
 const trasporter = nodemailer.createTransport({
