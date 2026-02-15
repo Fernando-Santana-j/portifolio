@@ -1,0 +1,34 @@
+{
+    "name": "portifolio",
+    "version": "1.0.0",
+    "description": "Hello, this application is a portfolio developed 100% by me (Fernando Júnio), the application aims to show a little of my work, in the application it is possible to find several features in addition to delivering a vision of my person, I hope you like it ♡.",
+    "author": "Fernando Júnio",
+    "license": "ISC",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm install && node index.js",
+        "dev2": "node --watch index.js",
+        "dev": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fernando-juni0/portifolio.git"
+    },
+    "bugs": {
+        "url": "https://github.com/fernando-juni0/portifolio/issues"
+    },
+    "homepage": "https://github.com/fernando-juni0/portifolio#readme",
+    "dependencies": {
+        "axios": "^1.13.4",
+        "body-parser": "^2.2.2",
+        "child_process": "^1.0.2",
+        "cookie-parser": "^1.4.7",
+        "dotenv": "^17.2.3",
+        "ejs": "^4.0.1",
+        "express": "^5.2.1",
+        "express-session": "^1.19.0",
+        "file-system": "^2.2.2",
+        "nodemailer": "^7.0.13",
+        "nodemon": "^3.1.11"
+    }
+}
