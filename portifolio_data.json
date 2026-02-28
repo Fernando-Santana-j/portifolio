@@ -1,0 +1,15 @@
+{
+    "visible": true,
+    "name": "portifolio",
+    "description": "",
+    "type":"personal",
+    "status": "development",
+    "deploy": "",
+    "technologies": [
+        "JavaScript",
+        "Node.js",
+        "CSS",
+        "EJS",
+        "API"
+    ]
+}

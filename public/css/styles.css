@@ -977,8 +977,11 @@ section {
 }
 
 .project-link {
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; */
+    padding: 10px;
+    text-decoration: none;
+    gap: 5px;
     border-radius: 8px;
     background: var(--bg-tertiary);
     display: flex;
