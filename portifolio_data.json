@@ -1,7 +1,7 @@
 {
     "visible": true,
     "name": "portifolio",
-    "description": "",
+    "description": "Portfólio pessoal projetado não só para mostrar projetos e habilidades, mas também para evidenciar minha prática em desenvolvimento: desde front-end até automações e integrações. Destaco o uso da API do GitHub para buscar automaticamente repositórios, extrair metadados e exibir versões, linguagens e READMEs — uma maneira clara de mostrar como trabalho com APIs, autenticação e pipelines de deploy. Navegue pelos projetos, confira o código e veja como posso ajudar no seu próximo desafio.",
     "type":"personal",
     "status": "development",
     "deploy": "",
@@ -11,5 +11,7 @@
         "CSS",
         "EJS",
         "API"
-    ]
+    ],
+    "pinned": true,
+    "banner":"https://res.cloudinary.com/dmfgy0ccd/image/upload/v1772442839/Screenshot_20260302_061307_gconrp.png"
 }

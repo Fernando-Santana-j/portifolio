@@ -422,8 +422,9 @@
             <div class="projects-grid">
                 <% repositorios.forEach(element=> { %>
                     <%# if (element.visible == true) { %>
-                        <div class="project-card" data-category="<%= element.type %>">
+                        <div class="project-card" data-category="<%= element.type %>" data-pinned="<%= element.pinned %>">
                             <div class="project-image">
+                                <img src="<%= element.banner ? element.banner : "/public/img/Banner-fernando.png" %>">
                                 <div class="project-overlay">
                                     <button class="project-btn" data-translate="view-details">Ver Detalhes</button>
                                 </div>
@@ -439,13 +440,15 @@
                                 <h3 class="project-title">
                                     <%= element.name %>
                                 </h3>
-                                <p class="project-description" data-translate="project-desc-1">
+                                <p class="project-description">
                                     <%= element.description %>
                                 </p>
                                 <div class="project-tech">
-                                    <% if (element.technologies && Array.isArray(element.technologies)) { %>
+                                    <% if (element.technologies && element.technologies.length > 0) { %>
                                         <% element.technologies.forEach(tech => { %>
-                                            <span class="project-tag"><%= tech %></span>
+                                            <% if (tech && tech.trim() !== "") { %>
+                                             <span class="project-tag"><%= tech %></span>
+                                            <% } %>
                                         <% }) %>
                                     <% } %>
                                         

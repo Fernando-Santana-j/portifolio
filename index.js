@@ -101,9 +101,9 @@ async function getRepos() {
                 status: fileContent ? fileContent.status : 'disabled',
                 type: fileContent ? fileContent.type : 'personal',
                 deploy: fileContent ? fileContent.deploy : null,
-                language: r.language,
                 visible: fileContent ? fileContent.visible : true,
-                created_at: r.created_at.slice(0, 4)
+                created_at: r.created_at.slice(0, 4),
+                technologies: fileContent && fileContent.technologies ? fileContent.technologies : [r.language]
             };
         }));
 
@@ -117,7 +117,7 @@ async function getRepos() {
 
 app.get('/', async (req, res) => {
     let repositorios = await getRepos();
-    console.log(repositorios);
+    repositorios = [...repositorios.filter(x => x.pinned), ...repositorios.filter(x => !x.pinned)]
     
     res.render('index', { repositorios });
 })
