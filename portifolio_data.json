@@ -1,7 +1,7 @@
 {
     "visible": true,
     "name": "portifolio",
-    "description": "Portfólio pessoal projetado não só para mostrar projetos e habilidades, mas também para evidenciar minha prática em desenvolvimento: desde front-end até automações e integrações. Destaco o uso da API do GitHub para buscar automaticamente repositórios, extrair metadados e exibir versões, linguagens e READMEs — uma maneira clara de mostrar como trabalho com APIs, autenticação e pipelines de deploy. Navegue pelos projetos, confira o código e veja como posso ajudar no seu próximo desafio.",
+    "description": "Portfólio criado para apresentar meus projetos e habilidades, além de demonstrar minha experiência com desenvolvimento e integração com a API do GitHub para exibir automaticamente meus repositórios e dados em tempo real.",
     "type":"personal",
     "status": "development",
     "deploy": "",
